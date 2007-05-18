@@ -17,7 +17,7 @@
   <date>2007-05-18</date>
   <license uri="http://www.gnu.org/licenses/lgpl.txt">LGPL</license>
   <state>alpha</state>
-  <notes>This is the initial release of the HTML_QuickForm_altselect package.</notes>
+  <notes>This is the initial release of the Math_Combinatorics package.</notes>
   <deps>
     <dep type="php" rel="ge" version="5.1" optional="no" />
   </deps>
