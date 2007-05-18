@@ -14,21 +14,25 @@
   </maintainers>
  <release>
   <version>1.0.0RC1</version>
-  <date>2007-03-20</date>
+  <date>2007-05-18</date>
   <license uri="http://www.gnu.org/licenses/lgpl.txt">LGPL</license>
   <state>alpha</state>
   <notes>This is the initial release of the HTML_QuickForm_altselect package.</notes>
   <deps>
-    <dep type="php" rel="ge" version="5.0.0" optional="no" />
+    <dep type="php" rel="ge" version="5.1" optional="no" />
   </deps>
   <provides type="class" name="Math_Combinatorics" />
   <filelist>
-   <file role="php" baseinstalldir="Math" md5sum="363cbd7ae8dfa0a8d6c602472a979bff" name="Combinatorics.php">
+   <file role="php" baseinstalldir="Math" md5sum="4e5035247d443207b6ce5070cd5f492a" name="Combinatorics.php">
     <replace from="@package_version@" to="version" type="package-info" />
    </file>
    <dir role="test" name="tests">
-    <file md5sum="e87678d73264f595f6e6f65d196ed536" name="test_1.phpt" />
-    <file md5sum="a505c0a4a736d454cd865770318f7070" name="test_2.phpt" />
+    <file md5sum="2bc651010cf2b99bb3bd26022e4dbcdf" name="test_1.phpt" />
+    <file md5sum="1fe6fabb6690009e66c960abfd554f2f" name="test_2.phpt" />
+    <file md5sum="fe6169f85918974efd7bfd08c83c8670" name="test_3.phpt" />
+    <file md5sum="2fd0b676216d0168314c76ceaa2a046e" name="test_4.phpt" />
+    <file md5sum="57bfa63e140d92e5dc6c34638d233fd9" name="test_5.phpt" />
+    <file md5sum="95219bf9536f7a04fa38c4b6c8f5f918" name="test_6.phpt" />
    </dir>
    <dir role="doc" name="docs">
     <dir name="examples">
