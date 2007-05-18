@@ -54,11 +54,11 @@ class Math_Combinatorics
      */
     public function combinations(array $set, $subset_size = null)
     {
-        if (is_null($subset_size)) {
-            $subset_size = count($set);
-        }
-
         $set_size = count($set);
+
+        if (is_null($subset_size)) {
+            $subset_size = $set_size;
+        }
 
         if ($subset_size >= $set_size) {
             return array($set);
@@ -139,10 +139,6 @@ class Math_Combinatorics
      */
     public function permutations(array $set, $subset_size = null)
     {
-        if (is_null($subset_size)) {
-            $subset_size = count($set);
-        }
-
         $combinations = $this->combinations($set, $subset_size);
         $permutations = array();
 
