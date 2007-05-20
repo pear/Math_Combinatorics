@@ -14,9 +14,9 @@
   </maintainers>
  <release>
   <version>1.0.0RC1</version>
-  <date>2007-05-18</date>
+  <date>2007-05-20</date>
   <license uri="http://www.gnu.org/licenses/lgpl.txt">LGPL</license>
-  <state>alpha</state>
+  <state>beta</state>
   <notes>This is the initial release of the Math_Combinatorics package.</notes>
   <deps>
     <dep type="php" rel="ge" version="5.1" optional="no" />
