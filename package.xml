@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.6.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
-http://pear.php.net/dtd/tasks-1.0.xsd
-http://pear.php.net/dtd/package-2.0
-http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.6.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>Math_Combinatorics</name>
  <channel>pear.php.net</channel>
  <summary>A package that produces combinations and permutations</summary>
- <description>A package that returns all the combinations and permutations, without repitition, of a given set and subset size. Associative arrays are preserved.
- </description>
+ <description>A package that returns all the combinations and permutations, without repitition, of a given set and subset size. Associative arrays are preserved.</description>
  <lead>
   <name>David Sanders</name>
   <user>shangxiao</user>
@@ -15,37 +11,30 @@ http://pear.php.net/dtd/package-2.0.xsd">
   <active>yes</active>
  </lead>
  <date>2007-10-31</date>
- <time>21:54:10</time>
+ <time>21:57:46</time>
  <version>
-  <release>1.0.0RC1</release>
-  <api>1.0.0RC1</api>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
  </version>
  <stability>
-  <release>beta</release>
-  <api>beta</api>
+  <release>stable</release>
+  <api>stable</api>
  </stability>
  <license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
- <notes>This is the initial release of the Math_Combinatorics package.
- </notes>
+ <notes>No change.  Bump release to stable.</notes>
  <contents>
-  <dir name="/">
-   <dir name="docs">
-    <dir name="examples">
-     <file md5sum="1379b25b6b48d912b720d4fa8c256aac" name="example.php" role="doc" />
-    </dir> <!-- /docs/examples -->
-   </dir> <!-- /docs -->
-   <dir name="tests">
-    <file md5sum="2bc651010cf2b99bb3bd26022e4dbcdf" name="test_1.phpt" role="test" />
-    <file md5sum="1fe6fabb6690009e66c960abfd554f2f" name="test_2.phpt" role="test" />
-    <file md5sum="fe6169f85918974efd7bfd08c83c8670" name="test_3.phpt" role="test" />
-    <file md5sum="2fd0b676216d0168314c76ceaa2a046e" name="test_4.phpt" role="test" />
-    <file md5sum="57bfa63e140d92e5dc6c34638d233fd9" name="test_5.phpt" role="test" />
-    <file md5sum="95219bf9536f7a04fa38c4b6c8f5f918" name="test_6.phpt" role="test" />
-   </dir> <!-- /tests -->
+  <dir baseinstalldir="Math" name="/">
+   <file baseinstalldir="Math" md5sum="1379b25b6b48d912b720d4fa8c256aac" name="docs/examples/example.php" role="doc" />
+   <file baseinstalldir="Math" md5sum="2bc651010cf2b99bb3bd26022e4dbcdf" name="tests/test_1.phpt" role="test" />
+   <file baseinstalldir="Math" md5sum="1fe6fabb6690009e66c960abfd554f2f" name="tests/test_2.phpt" role="test" />
+   <file baseinstalldir="Math" md5sum="fe6169f85918974efd7bfd08c83c8670" name="tests/test_3.phpt" role="test" />
+   <file baseinstalldir="Math" md5sum="2fd0b676216d0168314c76ceaa2a046e" name="tests/test_4.phpt" role="test" />
+   <file baseinstalldir="Math" md5sum="57bfa63e140d92e5dc6c34638d233fd9" name="tests/test_5.phpt" role="test" />
+   <file baseinstalldir="Math" md5sum="95219bf9536f7a04fa38c4b6c8f5f918" name="tests/test_6.phpt" role="test" />
    <file baseinstalldir="Math" md5sum="4e5035247d443207b6ce5070cd5f492a" name="Combinatorics.php" role="php">
     <tasks:replace from="@package_version@" to="version" type="package-info" />
    </file>
-  </dir> <!-- / -->
+  </dir>
  </contents>
  <dependencies>
   <required>
@@ -58,4 +47,32 @@ http://pear.php.net/dtd/package-2.0.xsd">
   </required>
  </dependencies>
  <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0RC1</release>
+    <api>1.0.0RC1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2007-10-31</date>
+   <license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
+   <notes>This is the initial release of the Math_Combinatorics package.</notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2007-10-31</date>
+   <license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
+   <notes>No change.  Bump release to stable.</notes>
+  </release>
+ </changelog>
 </package>
