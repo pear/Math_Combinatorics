@@ -1,23 +1,6 @@
 <?php
-/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
-/**
- * Math_Combinatorics
- *
- * Math_Combinatorics provides the ability to find all combinations and
- * permutations given an set and a subset size.  Associative arrays are
- * preserved.
- *
- * PHP version 5
- *
- * @category   Math
- * @package    Combinatorics
- * @author     David Sanders <shangxiao@php.net>
- * @license    http://www.gnu.org/copyleft/lesser.html  LGPL License 2.1
- * @version    Release: @package_version@
- * @link       http://pyrus.sourceforge.net/Math_Combinatorics.html
- */
-
+namespace pear;
 
 /**
  * Math_Combinatorics
@@ -33,7 +16,6 @@
  * @version    Release: @package_version@
  * @link       http://pyrus.sourceforge.net/Math_Combinatorics.html
  */
-
 class Math_Combinatorics
 {
     /**
@@ -52,7 +34,7 @@ class Math_Combinatorics
      * @param  int   $subset_size  Subset size
      * @return array An array of combinations
      */
-    public function combinations(array $set, $subset_size = null)
+    public static function combinations(array $set, $subset_size = null)
     {
         $set_size = count($set);
 
@@ -68,13 +50,14 @@ class Math_Combinatorics
             return array();
         }
 
+        $combinatoricsInstance = new self();
         $combinations = array();
         $set_keys = array_keys($set);
-        $this->_pointers = array_slice(array_keys($set_keys), 0, $subset_size);
+        $combinatoricsInstance->_pointers = array_slice(array_keys($set_keys), 0, $subset_size);
 
-        $combinations[] = $this->_getCombination($set);
-        while ($this->_advancePointers($subset_size - 1, $set_size - 1)) {
-            $combinations[] = $this->_getCombination($set);
+        $combinations[] = $combinatoricsInstance->_getCombination($set);
+        while ($combinatoricsInstance->_advancePointers($subset_size - 1, $set_size - 1)) {
+            $combinations[] = $combinatoricsInstance->_getCombination($set);
         }
 
         return $combinations;
