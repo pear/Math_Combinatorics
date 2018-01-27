@@ -12,7 +12,7 @@
         ]
     },
     "description": "More info available on: http://pear.php.net/package/Math_Combinatorics",
-    "license": "LGPL",
+    "license": "LGPL-3.0-or-later",
     "name": "pear/math_combinatorics",
     "support": {
         "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Math_Combinatorics",
@@ -20,7 +20,7 @@
     },
     "type": "library",
     "require": {
-        "pear/pear_exception": "*"
+        "pear/pear_exception": "~1.0.0"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
